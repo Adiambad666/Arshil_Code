@@ -1,0 +1,29 @@
+
+let arr=[2,2,1,1,8,7,7];
+let k=0;
+let temp=0;
+for(let i=0;i<arr.length;i++)
+{
+    for(let j=i+1;j<arr.length;j++)
+    {
+        if(arr[i]>arr[j])
+        {
+            let temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
+}
+
+for(let ii=0;ii<arr.length;ii++)
+{
+   if(arr[ii+1]==arr[ii])
+   {
+       ii++;
+   }
+   else
+   {
+        console.log(arr[ii]);
+        break;
+   }
+}

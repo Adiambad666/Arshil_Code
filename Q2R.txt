@@ -1,0 +1,16 @@
+
+let str="Aditya Anant Ambad";
+
+const myArray = str.split(" ");
+let temp="";
+for(let i=0;i<myArray.length;i++)
+{
+    for(let j=myArray[i].length-1;j>=0;j--)
+    {
+        let ch=myArray[i].charAt(j);
+        temp=temp+ch;
+    }
+    myArray[i]=temp;
+    temp="";
+}
+console.log(myArray.toString());
